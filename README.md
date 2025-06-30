@@ -39,9 +39,9 @@ Built using **React**, **TypeScript**, **TailwindCSS**, and **Vite**, it offers 
 
 ## 📸 Preview
 
-| **Home Page**                                       | **Daily Uplift Page**                               |
+| **Home Page**                                       | **Mood Trends Page**                                |
 | --------------------------------------------------- | --------------------------------------------------- |
-| ![Home Page](public/assets/preview/Image_1.webp)    | ![Daily Uplift](public/assets/preview/Image_2.webp) |
+| ![Home Page](public/assets/preview/Image_1.webp)    | ![Daily Uplift](public/assets/preview/Image_7.webp) |
 
 | **Mood Tracker Page**                               | **Journal Page**                                    |
 | --------------------------------------------------- | --------------------------------------------------- |
@@ -51,10 +51,6 @@ Built using **React**, **TypeScript**, **TailwindCSS**, and **Vite**, it offers 
 | --------------------------------------------------- | --------------------------------------------------- |
 | ![Breathe](public/assets/preview/Image_5.webp)      | ![Lofi Music](public/assets/preview/Image_6.webp)   |
     
-| **Mood Trends Page**                                |
-| --------------------------------------------------- |
-| ![Mood Trends](public/assets/preview/Image_7.webp)  |
-
 <br>
 
 ## 📁 Project Structure
