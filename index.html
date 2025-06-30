@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#8b5cf6" />
+    
+    <!-- Primary Meta Tags -->
+    <title>MindEaze - Daily Mood Journal & Wellness Buddy</title>
+    <meta name="description" content="Track your mood, journal your thoughts, and practice mindfulness with MindEaze - your personal wellness companion." />
+    <meta name="author" content="Pranav Khalate">
+
+    <!-- PWA Essentials -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- iOS Specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="MindEaze" />
+    
+    <!-- Apple Touch Icons (Optimized) -->
+    <link rel="apple-touch-icon" href="/assets/images/Icon_180x180.webp" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/Icon_152x152.webp" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/Icon_167x167.webp" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/Icon_180x180.webp" />
+    
+    <!-- Favicon (Modern Approach) -->
+    <link rel="icon" href="/assets/images/Icon_32x32.webp" sizes="32x32" type="image/webp" />
+    <link rel="icon" href="/assets/images/Icon_192x192.webp" sizes="192x192" type="image/webp" />
+    <link rel="shortcut icon" href="/assets/images/Icon_32x32.webp" type="image/webp" />
+
+    <!-- Splash Screens (iOS) -->
+    <link rel="apple-touch-startup-image" href="/assets/images/splash_640x1136.webp" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/assets/images/splash_750x1334.webp" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/src/main.tsx" as="script" />
+    <link rel="preload" href="/assets/images/Icon_192x192.webp" as="image" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQTDM0KMZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-FCQTDM0KMZ');
+    </script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => console.log('SW registered: ', registration))
+            .catch(err => console.log('SW registration failed: ', err));
+        });
+      }
+    </script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
